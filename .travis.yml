@@ -10,7 +10,7 @@ deploy:
   provider: elasticbeanstalk
   region: 'eu-north-1:'
   app: 'docker-travis'
-  env: 'e-ezgwqqpnbd'
+  env: 'Docker-travis-env'
   bucket_name: 'elasticbeanstalk-eu-north-1-766895652364'
   bucket_path: 'docker-travis'
   access_key_id: "$AWS_ACCESS_KEY"
