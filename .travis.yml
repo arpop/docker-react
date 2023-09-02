@@ -8,7 +8,7 @@ script:
 
 deploy:
   provider: elasticbeanstalk
-  region: "eu-north-1:"
+  region: "eu-north-1"
   app: "docker-travis"
   env: "Docker-travis-env"
   bucket_name: "elasticbeanstalk-eu-north-1-766895652364"
