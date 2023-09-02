@@ -2,7 +2,7 @@ sudo: required
 serivces:
   - docker
 before_install:
-  - docker build -t andreipop85/docker-react -f Dockerfile . 
+  - docker build -t andreipop85/docker-react -f Dockerfile.dev . 
 script:
   - docker run -e CI=true andreipop85/docker-react npm run test
 
@@ -11,7 +11,8 @@ deploy:
   region: "eu-north-1:"
   app: "docker-travis"
   env: "Docker-travis-env"
-  bucket: "elasticbeanstalk-eu-north-1-766895652364"
+  bucket_name: "elasticbeanstalk-eu-north-1-766895652364"
+  bucket_path: "docker-travis"
   access_key_id: "$AWS_ACCESS_KEY"
   secret_access_key: "$AWS_SECRET_KEY"
   on:
