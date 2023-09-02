@@ -22,6 +22,8 @@ function App() {
     <div className="App">
       <p>
         My string: {myString}
+        <br />
+        This should be on AWS
       </p>
     </div>
   );
